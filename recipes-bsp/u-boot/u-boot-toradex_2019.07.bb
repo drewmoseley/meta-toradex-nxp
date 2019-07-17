@@ -11,6 +11,10 @@ nand_padding () {
     dd bs=1024 count=1 if=/dev/zero | cat - u-boot.imx > u-boot-nand.imx
 }
 
+do_compile_append_colibri-vf () {
+    nand_padding
+}
+
 do_compile_append_colibri-imx6ull () {
     nand_padding
 }
