@@ -2,6 +2,7 @@
 # Released under the MIT license (see COPYING.MIT for the terms)
 
 SUMMARY = "Deploys Vivante GPU libraries, even if no package RDEPENDS on them"
+COMPATIBLE_MACHINE = "(apalis*|colibri*|verdin*)"
 
 PACKAGE_ARCH = "${MACHINE_ARCH}"
 
